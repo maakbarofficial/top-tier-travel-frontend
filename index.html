@@ -11,11 +11,10 @@
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
+        html,
         body {
+            @apply h-full w-full m-0 p-0 overflow-hidden bg-[#EAEDF7];
             font-family: 'Inter', sans-serif;
-        }
-        body {
-            @apply bg-[#EAEDF7] p-1;
         }
       </style>
     <title>Top Tier Travel</title>
@@ -23,10 +22,10 @@
 
 <body>
     <!-- Main Boday -->
-    <div class="flex">
+    <div class="flex gap-14">
         <!-- Menu -->
-        <div class="max-w-[272px] h-[98vh] bg-[#FFFFFF] rounded-tl-[10px] rounded-bl-[10px]">
-            <!-- below flex col is not working -->
+        <div
+            class="max-w-[272px] h-[98vh] bg-[#FFFFFF] rounded-tl-[10px] rounded-bl-[10px] border-[#E2E4E9] border-r-[1px]">
             <div class="flex flex-col items-center justify-between h-full">
                 <div>
                     <!-- Logo -->
@@ -105,7 +104,9 @@
             </div>
         </div>
         <!-- Main Content -->
-        <div>
+        <!-- For Debug -->
+        <!-- bg-white w-full h-[90vh] rounded-lg -->
+        <div class="flex flex-col w-full border border-red-300 rounded-lg my-8 mx-5">
 
         </div>
     </div>
