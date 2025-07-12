@@ -429,479 +429,141 @@
             </div>
             <!-- Page Title -->
             <div class="hidden lg:block py-6">
-               <h1 class="font-semibold text-2xl">Welcome To Dashboard</h1>
+               <h1 class="font-semibold text-2xl">Settings</h1>
             </div>
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-3 mb-5">
-               <!-- Stats -->
-               <div class="flex flex-col gap-3 items-center justify-between h-full">
-                  <div class="flex flex-col items-center justify-center gap-3">
-                     <div
-                        class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl flex items-center justify-center"
-                        >
-                        <div class="space-y-2 min-w-[300px]">
-                           <h3 class="font-medium text-sm text-[#0A0D14]">
-                              Total Sales Revenue
-                           </h3>
-                           <h4 class="font-bold text-xl text-[#0A0D14]">$49,420</h4>
-                           <h5
-                              class="font-medium text-sm text-[#2D9F75] flex items-center gap-1"
-                              >
-                              <span
-                                 ><img
-                                 src="https://static.vecteezy.com/system/resources/thumbnails/041/644/009/small_2x/3d-green-upward-trend-arrow-icon-png.png"
-                                 width="10px"
-                                 height="10px" /></span
-                                 >40%
-                           </h5>
-                        </div>
-                        <div>
-                           <div class="p-3 bg-[#675CE60F] rounded-full mt-10">
-                              <img
-                                 src="https://icones.pro/wp-content/uploads/2021/03/icone-de-l-argent-symbole-png-violet.png"
-                                 alt="menu"
-                                 width="30px"
-                                 height="30px"
-                                 class="text-gray-300"
-                                 />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="flex flex-col items-center justify-center gap-3">
-                     <div
-                        class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl flex items-center justify-center"
-                        >
-                        <div class="space-y-2 min-w-[300px]">
-                           <h3 class="font-medium text-sm text-[#0A0D14]">
-                              Total Sales Revenue
-                           </h3>
-                           <h4 class="font-bold text-xl text-[#0A0D14]">$49,420</h4>
-                           <h5
-                              class="font-medium text-sm text-[#2D9F75] flex items-center gap-1"
-                              >
-                              <span
-                                 ><img
-                                 src="https://static.vecteezy.com/system/resources/thumbnails/041/644/009/small_2x/3d-green-upward-trend-arrow-icon-png.png"
-                                 width="10px"
-                                 height="10px" /></span
-                                 >40%
-                           </h5>
-                        </div>
-                        <div>
-                           <div class="p-3 bg-[#675CE60F] rounded-full mt-10">
-                              <img
-                                 src="https://icones.pro/wp-content/uploads/2021/03/icone-de-l-argent-symbole-png-violet.png"
-                                 alt="menu"
-                                 width="30px"
-                                 height="30px"
-                                 class="text-gray-300"
-                                 />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="flex flex-col items-center justify-center gap-3">
-                     <div
-                        class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl flex items-center justify-center"
-                        >
-                        <div class="space-y-2 min-w-[300px]">
-                           <h3 class="font-medium text-sm text-[#0A0D14]">
-                              Total Sales Revenue
-                           </h3>
-                           <h4 class="font-bold text-xl text-[#0A0D14]">$49,420</h4>
-                           <h5
-                              class="font-medium text-sm text-[#DF1C41] flex items-center gap-1"
-                              >
-                              <span
-                                 ><img
-                                 src="https://cdn1.iconfinder.com/data/icons/stock-market-and-business/512/3D-Red-Downward-Trend-Arrow-Icon.png"
-                                 width="10px"
-                                 height="10px" /></span
-                                 >40%
-                           </h5>
-                        </div>
-                        <div>
-                           <div class="p-3 bg-[#675CE60F] rounded-full mt-10">
-                              <img
-                                 src="https://icones.pro/wp-content/uploads/2021/03/icone-de-l-argent-symbole-png-violet.png"
-                                 alt="menu"
-                                 width="30px"
-                                 height="30px"
-                                 class="text-gray-300"
-                                 />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Comission Tracking -->
+            <!-- Tabs -->
+            <div class="mb-5 flex items-center justify-start gap-5">
+               <a class="text-[#6E3FF3] border-b-2 border-b-[#6E3FF3] pb-2 font-semibold text-base cursor-pointer">General Settings</a>
+               <a class="text-[#6E7789] font-normal text-base cursor-pointer hover:border-b-2 hover:border-b-[#6E7789] pb-2">Personal Information</a>
+            </div>
+            <div class="grid grid-cols-12 gap-3 mb-5 h-full">
                <div
-                  class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl w-full h-full flex flex-col items-start justify-start"
+                  class="col-span-12 lg:col-span-9 border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl w-full h-fit flex flex-col items-start justify-start"
                   >
-                  <div class="border-b-2 border-b-[#F2F2F2] w-full pb-3">
-                     <h1 class="font-semibold text-[#0A0D14] text-xl">
-                        Commision Tracking
+                  <div class="w-full pb-5">
+                     <h1 class="font-semibold text-[#0A0D14] text-lg">
+                        Main Settings
                      </h1>
+                     <h2 class="font-normal text-[#525866] text-base">
+                        Application name and tags
+                     </h2>
                   </div>
-                  <div class="flex flex-col lg:flex-row items-center justify-between w-full py-3 mb-5">
-                     <div class="flex gap-5">
-                        <div class="flex gap-1">
-                           <p class="font-semibold text-xl text-[#0A0D14] mr-2">0%</p>
-                           <p class="font-medium text text-[#868C98]">This Week</p>
+                  <div class="border-b-2 border-b-[#E5E7EB] w-full mb-5">
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-5 w-full">
+                        <div class="mb-5 w-full">
+                           <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Business Name</label>
+                           <input type="text" class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required />
                         </div>
-                        <div class="flex gap-1">
-                           <p class="font-semibold text-xl text-[#0A0D14] mr-2">0%</p>
-                           <p class="font-medium text text-[#868C98]">Projects</p>
-                        </div>
-                     </div>
-                     <div class="hidden lg:block">
-                        <button
-                           class="bg-[#6259CA] px-4 py-2 text-[#FFFFFF] rounded-lg cursor-pointer font-semibold text-base"
-                           >
-                        View Details
-                        </button>
-                     </div>
-                  </div>
-                  <div class="flex flex-col lg:flex-row items-center justify-between w-full py-3 mb-5">
-                     <div class="flex flex-col lg:flex-row items-center justify-evenly gap-10">
-                        <div>
-                           <div class="w-40 h-40 rounded-full bg-[#59B6FC]"></div>
-                        </div>
-                        <div class="flex items-center justify-center gap-2">
-                           <div class="flex items-center gap-3 w-full lg:mb-3">
-                              <div class="w-3 h-3 rounded-full bg-[#59B6FC]"></div>
-                              <div class="flex items-center justify-between gap-10 lg:w-[200px]">
-                                 <p class="font-normal text-sm text-[#101010B2]">Paid</p>
-                                 <p class="font-semibold text-lg text-[#101010]">70%</p>
-                              </div>
-                           </div>
-                           <div class="flex items-center gap-3 w-full">
-                              <div class="w-3 h-3 rounded-full bg-[#FECB67]"></div>
-                              <div class="flex items-center justify-between gap-10 lg:w-[200px]">
-                                 <p class="font-normal text-sm text-[#101010B2]">
-                                    Pending
-                                 </p>
-                                 <p class="font-semibold text-lg text-[#101010]">30%</p>
-                              </div>
-                           </div>
+                        <div class="mb-5 w-full">
+                           <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Business Name</label>
+                           <input type="text" class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required />
                         </div>
                      </div>
-                     <div class="flex flex-col text-left w-full items-start lg:items-center py-5 px-10 gap-1">
-                        <p class="font-medium text-[22px] text-[#868C98]">
-                           Total Earned
-                        </p>
-                        <p class="font-semibold text-5xl text-[#0A0D14] py-2">
-                           $100.00
-                        </p>
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-5 w-full">
+                        <div class="mb-5 w-full">
+                           <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Business Name</label>
+                           <input type="text" class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required />
+                        </div>
+                        <div class="mb-5 w-full">
+                           <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Offline Message</label>
+                           <input type="text" class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required />
+                        </div>
+                     </div>
+                     <div class="mb-5 w-full">
+                        <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Offline Message</label>
+                        <textarea class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required></textarea>
                      </div>
                   </div>
-                  <div class="block w-full lg:hidden">
+                  <div class="w-full pb-5 my-3">
+                     <h1 class="font-semibold text-[#0A0D14] text-lg">
+                        Website Theme
+                     </h1>
+                     <h2 class="font-normal text-[#525866] text-base">
+                        Set Color Theme
+                     </h2>
+                  </div>
+                  <div class="border-b-2 border-b-[#E5E7EB] w-full mb-5">
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-5 w-full">
+                        <div class="mb-5 w-full">
+                           <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Business Name</label>
+                           <input type="text" class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required />
+                        </div>
+                        <div class="mb-5 w-full">
+                           <label for="email" class="block mb-2 text-sm font-medium text-[#161924]">Business Name</label>
+                           <input type="text" class="bg-[#FFFFFF] border border-[#E2E4E9] text-[#161924] text-base font-normal rounded-lg block w-full py-2 px-3 " placeholder="PHP Travels" required />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full flex items-center justify-center lg:items-end lg:justify-end">
                      <button
-                        class="bg-[#6259CA] w-full px-4 py-2 text-[#FFFFFF] rounded-lg cursor-pointer font-semibold text-base"
+                        class="bg-[#6259CA] px-3 py-2 text-[#FFFFFF] rounded-lg cursor-pointer font-semibold text-base"
                         >
-                     View Details
+                     Update Settings
                      </button>
                   </div>
                </div>
-            </div>
-            <!-- Recent Bookings -->
-            <div class="w-full mb-5">
                <div
-                  class="w-full h-full flex flex-col items-start justify-start gap-5 border border-[#E5E7EB] bg-[#FFFFFF] px-5 py-4 rounded-xl"
+                  class="col-span-12 lg:col-span-3 border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl w-full h-fit flex flex-col items-start justify-start gap-5"
                   >
-                  <div
-                     class="border-b-2 border-b-[#F2F2F2] w-full pb-5 pt-1 flex flex-col items-start lg:flex-row lg:items-center justify-between"
-                     >
-                     <h1 class="font-semibold text-[#0A0D14] text-xl mb-3 lg:mb-0">
-                        Recent Booking
+                  <div class="w-full pb-3">
+                     <h1 class="font-semibold text-[#161924] text-lg">
+                        Branding
                      </h1>
-                     <div>
-                        <div
-                           class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg "
-                           >
-                           <img
-                              src="https://cdn-icons-png.flaticon.com/512/5680/5680244.png"
-                              alt="search"
-                              width="15px"
-                              height="15px"
-                              class="mr-2"
-                              />
-                           <input
-                              type="search"
-                              placeholder="Search..."
-                              class="w-full bg-transparent outline-none focus:outline-none focus:ring-0 focus:border-none text-[#868C98] placeholder:text-[#868C98] font-normal text-sm placeholder:text-sm placeholder:font-normal"
-                              />
-                        </div>
-                     </div>
+                     <h2 class="font-normal text-[#525866] text-base">
+                        Business Logo and Favicon
+                     </h2>
                   </div>
-                  <div
-                     class="relative w-full overflow-x-auto border border-[#0000000D] sm:rounded-lg"
-                     >
-                     <table class="w-full text-left rtl:text-right">
-                        <thead class="bg-[#F6F8FA]">
-                           <tr>
-                              <th
-                                 scope="col"
-                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                                 >
-                                 Name
-                              </th>
-                              <th
-                                 scope="col"
-                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                                 >
-                                 Hotel
-                              </th>
-                              <th
-                                 scope="col"
-                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                                 >
-                                 Date & Duration
-                              </th>
-                              <th
-                                 scope="col"
-                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                                 >
-                                 Status
-                              </th>
-                              <th
-                                 scope="col"
-                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                                 >
-                                 Status
-                              </th>
-                              <th
-                                 scope="col"
-                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                                 >
-                                 Action
-                              </th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr
-                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
-                              >
-                              <th
-                                 scope="row"
-                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                                 >
-                                 <img
-                                    class="w-10 h-10 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                                    alt="Jese image"
-                                    />
-                                 <div class="ps-5">
-                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
-                                 </div>
-                              </th>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
-                              <td class="px-6 py-4">
-                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <a
-                                    href="#"
-                                    class="font-medium text-[#6E7789]"
-                                    > . . . </a
-                                    >
-                              </td>
-                           </tr>
-                           <tr
-                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
-                              >
-                              <th
-                                 scope="row"
-                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                                 >
-                                 <img
-                                    class="w-10 h-10 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                                    alt="Jese image"
-                                    />
-                                 <div class="ps-5">
-                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
-                                 </div>
-                              </th>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
-                              <td class="px-6 py-4">
-                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <a
-                                    href="#"
-                                    class="font-medium text-[#6E7789]"
-                                    > . . . </a
-                                    >
-                              </td>
-                           </tr>
-                           <tr
-                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
-                              >
-                              <th
-                                 scope="row"
-                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                                 >
-                                 <img
-                                    class="w-10 h-10 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                                    alt="Jese image"
-                                    />
-                                 <div class="ps-5">
-                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
-                                 </div>
-                              </th>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
-                              <td class="px-6 py-4">
-                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <a
-                                    href="#"
-                                    class="font-medium text-[#6E7789]"
-                                    > . . . </a
-                                    >
-                              </td>
-                           </tr>
-                           <tr
-                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
-                              >
-                              <th
-                                 scope="row"
-                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                                 >
-                                 <img
-                                    class="w-10 h-10 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                                    alt="Jese image"
-                                    />
-                                 <div class="ps-5">
-                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
-                                 </div>
-                              </th>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
-                              <td class="px-6 py-4">
-                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <a
-                                    href="#"
-                                    class="font-medium text-[#6E7789]"
-                                    > . . . </a
-                                    >
-                              </td>
-                           </tr>
-                           <tr
-                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
-                              >
-                              <th
-                                 scope="row"
-                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                                 >
-                                 <img
-                                    class="w-10 h-10 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                                    alt="Jese image"
-                                    />
-                                 <div class="ps-5">
-                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
-                                 </div>
-                              </th>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
-                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
-                              <td class="px-6 py-4">
-                                 <span class="text-[#FFA261] px-3 py-1 rounded-2xl bg-[#FFF5E8] font-medium"> Open </span>
-                              </td>
-                              <td class="px-6 py-4">
-                                 <a
-                                    href="#"
-                                    class="font-medium text-[#6E7789]"
-                                    > . . . </a
-                                    >
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-               </div>
-            </div>
-            <!-- Share Cards -->
-            <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-5">
-               <div
-                  class="w-full h-full mb-5 flex flex-col lg:flex-row items-center justify-start gap-5 border border-[#E5E7EB] bg-[#FFFFFF] px-[22px] py-[18px] rounded-xl"
-                  >
-                  <div>
-                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/4187/4187272.png"
-                        width="150px"
-                        height="150px"
-                        />
-                  </div>
-                  <div class="w-full">
-                     <div class="border-b-2 border-b-[#E2E4E9] w-full pb-3">
-                        <h1 class="font-semibold text-[#0A0D14] text-xl">
-                           Share Travel Link & Earn Reward
+                  <div class="border border-[#E5E7EB] bg-[#FFFFFF] rounded-lg p-3 w-full h-fit">
+                     <div class="w-full pb-3">
+                        <h1 class="font-semibold text-[#161924] text-sm">
+                           Business Logo
                         </h1>
-                        <h2 class="font-normal text-[#525866] text-base">
-                           Invite clients & partners to your network
+                        <h2 class="font-normal text-[#525866] text-xs">
+                           only .png, .jpg, .jpeg files are allowed Max size 2MB
                         </h2>
+                     </div>
+                     <div class="w-full1 flex items-center justify-center">
+                        <img width="100px" height="100px" src="https://img.freepik.com/premium-vector/modern-professional-travel-logo_373791-1203.jpg?semt=ais_hybrid&w=740" alt="">
                      </div>
                      <div
                         class="flex items-center justify-start gap-5 mb-2 mt-4 w-full"
                         >
                         <button
-                           class="bg-[#6259CA] w-full px-3 py-2 text-[#FFFFFF] rounded-lg cursor-pointer font-semibold text-base"
+                           class="bg-[#FFFFFF] border border-[#E2E4E9] w-full px-3 py-2 text-[#E52F2F] rounded-lg cursor-pointer font-semibold text-base"
                            >
-                        Share Link
+                        Remove
                         </button>
                         <button
-                           class="bg-[#F5F4FA] w-full px-3 py-2 text-[#0A0D14] rounded-lg cursor-pointer font-semibold text-base"
+                           class="bg-[#FFFFFF] border border-[#E2E4E9] w-full px-3 py-2 text-[#161924] rounded-lg cursor-pointer font-semibold text-base"
                            >
-                        Copy Link
+                        Choose File
                         </button>
                      </div>
                   </div>
-               </div>
-               <div
-                  class="w-full h-full mb-5 flex flex-col lg:flex-row items-center justify-start gap-5 border border-[#E5E7EB] bg-[#FFFFFF] px-[22px] py-[18px] rounded-xl"
-                  >
-                  <div>
-                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/4187/4187272.png"
-                        width="150px"
-                        height="150px"
-                        />
-                  </div>
-                  <div class="w-full">
-                     <div class="border-b-2 border-b-[#E2E4E9] w-full pb-3">
-                        <h1 class="font-semibold text-[#0A0D14] text-xl">
-                           Share Travel Link & Earn Reward
+                  <div class="border border-[#E5E7EB] bg-[#FFFFFF] rounded-lg p-3 w-full h-fit">
+                     <div class="w-full pb-3">
+                        <h1 class="font-semibold text-[#161924] text-sm">
+                           Favicon
                         </h1>
-                        <h2 class="font-normal text-[#525866] text-base">
-                           Invite clients & partners to your network
+                        <h2 class="font-normal text-[#525866] text-xs">
+                           only .png, .jpg, .jpeg files are allowed Max size 2MB
                         </h2>
+                     </div>
+                     <div class="w-full1 flex items-center justify-center">
+                        <img width="100px" height="100px" src="https://img.freepik.com/premium-vector/modern-professional-travel-logo_373791-1203.jpg?semt=ais_hybrid&w=740" alt="">
                      </div>
                      <div
                         class="flex items-center justify-start gap-5 mb-2 mt-4 w-full"
                         >
                         <button
-                           class="bg-[#6259CA] w-full px-3 py-2 text-[#FFFFFF] rounded-lg cursor-pointer font-semibold text-base"
+                           class="bg-[#FFFFFF] border border-[#E2E4E9] w-full px-3 py-2 text-[#E52F2F] rounded-lg cursor-pointer font-semibold text-base"
                            >
-                        Share Link
+                        Remove
                         </button>
                         <button
-                           class="bg-[#F5F4FA] w-full px-3 py-2 text-[#0A0D14] rounded-lg cursor-pointer font-semibold text-base"
+                           class="bg-[#FFFFFF] border border-[#E2E4E9] w-full px-3 py-2 text-[#161924] rounded-lg cursor-pointer font-semibold text-base"
                            >
-                        Copy Link
+                        Choose File
                         </button>
                      </div>
                   </div>
