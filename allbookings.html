@@ -1,521 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      html,
-      body {
-        @apply h-full w-full m-1 p-0 overflow-hidden bg-[#EAEDF7];
-        font-family: "Inter", sans-serif;
-      }
-    </style>
-    <title>All Bookings</title>
-  </head>
-  <body>
-    <!-- Main Boday -->
-    <div class="flex gap-14 w-full h-full mx-auto overflow-scroll">
-      <!-- Menu -->
-      <div
-        class="max-w-[272px] h-[98vh] bg-[#FFFFFF] rounded-tl-[10px] rounded-bl-[10px] border-[#E2E4E9] border-r-[1px]"
-      >
-        <div class="flex flex-col items-center justify-between h-full flex-1">
-          <div>
-            <!-- Logo -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+         rel="stylesheet"
+         />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <style type="text/tailwindcss">
+         html,
+         body {
+         @apply h-full w-full m-1 p-0 overflow-hidden bg-[#EAEDF7];
+         font-family: "Inter", sans-serif;
+         }
+      </style>
+      <title>All Bookings</title>
+   </head>
+   <body>
+      <!-- Main Boday -->
+      <div class="flex flex-col lg:flex-row flex-1 gap-14 w-full h-full overflow-auto">
+         <!-- Menu -->
+         <div
+            class="hidden lg:block max-w-[272px] h-full bg-[#FFFFFF] rounded-tl-[10px] rounded-bl-[10px] border-[#E2E4E9] border-r-[1px]"
+            >
+            <div class="flex flex-col items-center justify-between h-full flex-1">
+               <div>
+                  <!-- Logo -->
+                  <div>
+                     <div class="p-3 cursor-pointer">
+                        <img
+                           src="https://static.vecteezy.com/system/resources/previews/006/232/185/non_2x/letter-t-with-airplane-logo-design-suitable-for-tour-and-travel-start-up-logistic-business-logo-template-vector.jpg"
+                           alt="logo"
+                           id="desktopMenuLogo"
+                           width="40px"
+                           height="40px"
+                           />
+                     </div>
+                     <div class="w-10 h-px bg-[#E2E4E9] mx-auto mb-2"></div>
+                  </div>
+                  <!-- Menu Items -->
+                  <div class="px-[8px] py-[20px] flex flex-col gap-5">
+                     <!-- Main -->
+                     <div class="flex flex-col items-center justify-center gap-2">
+                        <h2
+                           class="uppercase font-medium text-xs text-[#868C98] tracking-wider p-1"
+                           >
+                           Main
+                        </h2>
+                        <a
+                           class="hover:cursor-pointer p-2 bg-[#6E3FF31A] rounded-lg relative"
+                           href="index.html"
+                           >
+                           <div
+                              class="absolute w-1 h-5 rounded-tr-[4px] rounded-br-[4px] bg-[#6E3FF3] my-auto left-[-17px] top-0 bottom-0"
+                              ></div>
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           href="allbookings.html"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           href="settings.html"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                     </div>
+                     <!-- Other -->
+                     <div class="flex flex-col items-center justify-center gap-2">
+                        <h2
+                           class="uppercase font-medium text-xs text-[#868C98] tracking-wider p-1"
+                           >
+                           Other
+                        </h2>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
+                           >
+                        <img
+                           src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                           alt="menu"
+                           width="15px"
+                           height="15px"
+                           class="text-gray-300"
+                           />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- User Profile -->
+               <div>
+                  <div class="w-10 h-px bg-[#E2E4E9] mx-auto mb-2"></div>
+                  <div class="p-3">
+                     <img
+                        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="logo"
+                        width="40px"
+                        height="40px"
+                        class="rounded-lg"
+                        />
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Mobile Menu -->
+         <div class="bg-[#FFFFFF] py-4 px-5 flex flex-row items-center justify-between lg:hidden">
             <div>
-              <div class="p-3">
-                <img
-                  src="https://static.vecteezy.com/system/resources/previews/006/232/185/non_2x/letter-t-with-airplane-logo-design-suitable-for-tour-and-travel-start-up-logistic-business-logo-template-vector.jpg"
-                  alt="logo"
-                  width="40px"
-                  height="40px"
-                />
-              </div>
-              <div class="w-10 h-px bg-[#E2E4E9] mx-auto mb-2"></div>
+               <div class="p-3 cursor-pointer">
+                  <img
+                     src="https://static.vecteezy.com/system/resources/previews/006/232/185/non_2x/letter-t-with-airplane-logo-design-suitable-for-tour-and-travel-start-up-logistic-business-logo-template-vector.jpg"
+                     alt="logo"
+                     id="mobileMenuTrigger"
+                     width="40px"
+                     height="40px"
+                     />
+               </div>
             </div>
-            <!-- Menu Items -->
-            <div class="px-[8px] py-[20px] flex flex-col gap-5">
-              <!-- Main -->
-              <div class="flex flex-col items-center justify-center gap-2">
-                <h2
-                  class="uppercase font-medium text-xs text-[#868C98] tracking-wider p-1"
-                >
-                  Main
-                </h2>
-                <a
-                  class="hover:cursor-pointer p-2 bg-[#6E3FF31A] rounded-lg relative"
-                                                      href="index.html"
-                >
+            <div class="flex items-center justify-center gap-5">
+               <div class="">
+                  <img
+                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                     alt="search"
+                     width="37px"
+                     height="37px"
+                     class="rounded-lg"
+                     />
+               </div>
+               <div class="">
+                  <img
+                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                     alt="search"
+                     width="37px"
+                     height="37px"
+                     class="rounded-lg"
+                     />
+               </div>
+               <div class="">
+                  <img
+                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                     alt="search"
+                     width="37px"
+                     height="37px"
+                     class="rounded-lg"
+                     />
+               </div>
+            </div>
+         </div>
+         <!-- Right Side Drawer -->
+         <div id="drawer" class="fixed top-0 right-0 z-40 h-full w-72 bg-[#FFFFFF] shadow-xl transform translate-x-full transition-transform duration-300 ease-in-out rounded-tr-lg rounded-br-lg">
+            <div class="p-4">
+               <button id="closeDrawer" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+               </button>
+               <!-- Drawer content -->
+               <div class="space-y-2">
+                  <div>
+                     <div class="w-10 h-px bg-[#E2E4E9] mx-auto mb-2"></div>
+                     <div class="p-3">
+                        <img
+                           src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                           alt="logo"
+                           width="40px"
+                           height="40px"
+                           class="rounded-full"
+                           />
+                     </div>
+                  </div>
+                  <div class="px-[8px] py-[20px] flex flex-col gap-5">
+                     <!-- Main -->
+                     <div class="flex flex-col items-start justify-start gap-2">
+                        <h2
+                           class="uppercase font-medium text-xs text-[#868C98] tracking-wider p-1"
+                           >
+                           Main
+                        </h2>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Dashboard</p>
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Deals</p>
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Bookings</p>
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Calender</p>
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Feedback</p>
+                        </a>
+                     </div>
+                     <!-- Other -->
+                     <div class="flex flex-col items-start justify-start gap-2">
+                        <h2
+                           class="uppercase font-medium text-xs text-[#868C98] tracking-wider p-1"
+                           >
+                           Other
+                        </h2>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Settings</p>
+                        </a>
+                        <a
+                           class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg flex items-center gap-3"
+                           >
+                           <img
+                              src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
+                              alt="menu"
+                              width="15px"
+                              height="15px"
+                              class="text-gray-300"
+                              />
+                           <p class="text-[#313131] font-medium text-sm">Support</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="drawerOverlay" class="hidden fixed inset-0 bg-black/70 bg-opacity-50 z-30"></div>
+         <!-- Main Content -->
+         <!-- For Debug -->
+         <!-- bg-white w-full h-[90vh] rounded-lg -->
+         <div class="flex flex-col w-full rounded-lg my-7 mx-5">
+            <!-- Header -->
+            <div
+               class="hidden lg:flex bg-[#FFFFFF] rounded-lg px-5 py-3 w-full border border-[#E2E4E9] min-h-16 items-center justify-between"
+               >
+               <div>
                   <div
-                    class="absolute w-1 h-5 rounded-tr-[4px] rounded-br-[4px] bg-[#6E3FF3] my-auto left-[-17px] top-0 bottom-0"
-                  ></div>
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                                                      href="allbookings.html"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-              </div>
-              <!-- Other -->
-              <div class="flex flex-col items-center justify-center gap-2">
-                <h2
-                  class="uppercase font-medium text-xs text-[#868C98] tracking-wider p-1"
-                >
-                  Other
-                </h2>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-                <a
-                  class="hover:cursor-pointer p-2 hover:bg-[#6E3FF31A] hover:rounded-lg"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=23822&format=png&color=000000"
-                    alt="menu"
-                    width="15px"
-                    height="15px"
-                    class="text-gray-300"
-                  />
-                </a>
-              </div>
+                     class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg min-w-[290px]"
+                     >
+                     <img
+                        src="https://cdn-icons-png.flaticon.com/512/5680/5680244.png"
+                        alt="search"
+                        width="15px"
+                        height="15px"
+                        class="mr-2"
+                        />
+                     <input
+                        type="search"
+                        placeholder="Search..."
+                        class="w-full bg-transparent outline-none focus:outline-none focus:ring-0 focus:border-none text-[#868C98] placeholder:text-[#868C98] font-normal text-sm placeholder:text-sm placeholder:font-normal"
+                        />
+                  </div>
+               </div>
+               <div class="flex items-center justify-center gap-3">
+                  <div
+                     class="border border-[#E2E4E9] p-[10px] rounded-lg bg-[#F6F8FA] cursor-pointer"
+                     >
+                     <img
+                        src="https://www.iconpacks.net/icons/1/free-bell-icon-860-thumb.png"
+                        alt="search"
+                        width="15px"
+                        height="15px"
+                        />
+                  </div>
+                  <div class="flex items-center justify-center gap-2 cursor-pointer">
+                     <div class="">
+                        <img
+                           src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                           alt="search"
+                           width="37px"
+                           height="37px"
+                           class="rounded-lg"
+                           />
+                     </div>
+                     <div class="flex flex-col items-start justify-start p-1">
+                        <h1 class="font-medium text-base text-[#313131]">Jhon Doe</h1>
+                        <h2 class="font-medium text-[10px] text-[#868C98]">Admin</h2>
+                     </div>
+                     <div
+                        class="border border-[#E2E4E9] p-[10px] rounded-lg bg-[#F6F8FA] cursor-pointer"
+                        >
+                        <img
+                           src="https://cdn-icons-png.flaticon.com/512/142/142051.png"
+                           alt="search"
+                           width="10px"
+                           height="10px"
+                           />
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-          <!-- User Profile -->
-          <div>
-            <div class="w-10 h-px bg-[#E2E4E9] mx-auto mb-2"></div>
-            <div class="p-3">
-              <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
-                alt="logo"
-                width="40px"
-                height="40px"
-                class="rounded-lg"
-              />
+            <!-- Page Title -->
+            <div class="hidden lg:block py-6">
+               <h1 class="font-semibold text-2xl">All Bookings</h1>
             </div>
-          </div>
-        </div>
+            <!-- All Bookings -->
+            <div class="w-full mb-5">
+               <div
+                  class="w-full h-full flex flex-col items-start justify-start gap-5 border border-[#E5E7EB] bg-[#FFFFFF] px-5 py-4 rounded-xl"
+                  >
+                  <div
+                     class="border-b-2 border-b-[#F2F2F2] w-full pb-5 pt-1 flex flex-col items-start lg:flex-row lg:items-center justify-between"
+                     >
+                     <h1 class="font-semibold text-[#0A0D14] text-xl mb-3 lg:mb-0">
+                        Bookings
+                     </h1>
+                     <div>
+                        <div
+                           class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg "
+                           >
+                           <img
+                              src="https://cdn-icons-png.flaticon.com/512/5680/5680244.png"
+                              alt="search"
+                              width="15px"
+                              height="15px"
+                              class="mr-2"
+                              />
+                           <input
+                              type="search"
+                              placeholder="Search..."
+                              class="w-full bg-transparent outline-none focus:outline-none focus:ring-0 focus:border-none text-[#868C98] placeholder:text-[#868C98] font-normal text-sm placeholder:text-sm placeholder:font-normal"
+                              />
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="relative w-full overflow-x-auto border border-[#0000000D] sm:rounded-lg"
+                     >
+                     <table class="w-full text-left rtl:text-right">
+                        <thead class="bg-[#F6F8FA]">
+                           <tr>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Booking Date
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Name
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Hotel
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Date & Duration
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Status
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Status
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="px-6 py-3 text-base font-medium text-[#0A0D14]"
+                                 >
+                                 Action
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr
+                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
+                              >
+                              <th
+                                 scope="row"
+                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+                                 >
+                                 <img
+                                    class="w-10 h-10 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                    alt="Jese image"
+                                    />
+                                 <div class="ps-5">
+                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
+                                 </div>
+                              </th>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
+                              <td class="px-6 py-4">
+                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
+                              </td>
+                              <td class="px-6 py-4">
+                                 <a
+                                    href="#"
+                                    class="font-medium text-[#6E7789]"
+                                    > . . . </a
+                                    >
+                              </td>
+                           </tr>
+                           <tr
+                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
+                              >
+                              <th
+                                 scope="row"
+                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+                                 >
+                                 <img
+                                    class="w-10 h-10 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                    alt="Jese image"
+                                    />
+                                 <div class="ps-5">
+                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
+                                 </div>
+                              </th>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
+                              <td class="px-6 py-4">
+                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
+                              </td>
+                              <td class="px-6 py-4">
+                                 <a
+                                    href="#"
+                                    class="font-medium text-[#6E7789]"
+                                    > . . . </a
+                                    >
+                              </td>
+                           </tr>
+                           <tr
+                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
+                              >
+                              <th
+                                 scope="row"
+                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+                                 >
+                                 <img
+                                    class="w-10 h-10 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                    alt="Jese image"
+                                    />
+                                 <div class="ps-5">
+                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
+                                 </div>
+                              </th>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
+                              <td class="px-6 py-4">
+                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
+                              </td>
+                              <td class="px-6 py-4">
+                                 <a
+                                    href="#"
+                                    class="font-medium text-[#6E7789]"
+                                    > . . . </a
+                                    >
+                              </td>
+                           </tr>
+                           <tr
+                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
+                              >
+                              <th
+                                 scope="row"
+                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+                                 >
+                                 <img
+                                    class="w-10 h-10 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                    alt="Jese image"
+                                    />
+                                 <div class="ps-5">
+                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
+                                 </div>
+                              </th>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
+                              <td class="px-6 py-4">
+                                 <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
+                              </td>
+                              <td class="px-6 py-4">
+                                 <a
+                                    href="#"
+                                    class="font-medium text-[#6E7789]"
+                                    > . . . </a
+                                    >
+                              </td>
+                           </tr>
+                           <tr
+                              class="bg-[#FFFFFF] border-b border-[#EEF0F2] hover:bg-gray-50"
+                              >
+                              <th
+                                 scope="row"
+                                 class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+                                 >
+                                 <img
+                                    class="w-10 h-10 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                    alt="Jese image"
+                                    />
+                                 <div class="ps-5">
+                                    <div class="text-base font-medium text-[#0A0D14]">Jhon Doe</div>
+                                 </div>
+                              </th>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Karachi Pakistan</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">May 12 2025, 7 Days</td>
+                              <td class="px-6 py-4 font-normal text-base text-[#323232]">Normal</td>
+                              <td class="px-6 py-4">
+                                 <span class="text-[#FFA261] px-3 py-1 rounded-2xl bg-[#FFF5E8] font-medium"> Open </span>
+                              </td>
+                              <td class="px-6 py-4">
+                                 <a
+                                    href="#"
+                                    class="font-medium text-[#6E7789]"
+                                    > . . . </a
+                                    >
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <!-- Main Content -->
-      <!-- For Debug -->
-      <!-- bg-white w-full h-[90vh] rounded-lg -->
-      <div class="flex flex-col w-full rounded-lg my-7 mx-5">
-        <div
-          class="bg-[#FFFFFF] rounded-lg px-5 py-3 w-full border border-[#E2E4E9] min-h-16 flex items-center justify-between"
-        >
-          <div>
-            <div
-              class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg min-w-[290px]"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/5680/5680244.png"
-                alt="search"
-                width="15px"
-                height="15px"
-                class="mr-2"
-              />
-              <input
-                type="search"
-                placeholder="Search..."
-                class="w-full bg-transparent outline-none focus:outline-none focus:ring-0 focus:border-none text-[#868C98] placeholder:text-[#868C98] font-normal text-sm placeholder:text-sm placeholder:font-normal"
-              />
-            </div>
-          </div>
-          <div class="flex items-center justify-center gap-3">
-            <div
-              class="border border-[#E2E4E9] p-[10px] rounded-lg bg-[#F6F8FA] cursor-pointer"
-            >
-              <img
-                src="https://www.iconpacks.net/icons/1/free-bell-icon-860-thumb.png"
-                alt="search"
-                width="15px"
-                height="15px"
-              />
-            </div>
-            <div class="flex items-center justify-center gap-2 cursor-pointer">
-              <div class="">
-                <img
-                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="search"
-                  width="37px"
-                  height="37px"
-                  class="rounded-lg"
-                />
-              </div>
-              <div class="flex flex-col items-start justify-start p-1">
-                <h1 class="font-medium text-base text-[#313131]">Jhon Doe</h1>
-                <h2 class="font-medium text-[10px] text-[#868C98]">Admin</h2>
-              </div>
-              <div
-                class="border border-[#E2E4E9] p-[10px] rounded-lg bg-[#F6F8FA] cursor-pointer"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/142/142051.png"
-                  alt="search"
-                  width="10px"
-                  height="10px"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="py-6">
-          <h1 class="font-semibold text-2xl">All Bookings</h1>
-        </div>
-        <div class="w-full mb-5">
-          <div
-            class="w-full h-full flex flex-col items-start justify-start gap-5 border border-[#E5E7EB] bg-[#FFFFFF] px-5 py-4 rounded-xl"
-          >
-            <div
-              class="border-b-2 border-b-[#F2F2F2] w-full pb-5 pt-1 flex items-center justify-between"
-            >
-              <h1 class="font-semibold text-[#0A0D14] text-xl">
-                Bookings
-              </h1>
-              <div>
-                <div
-                  class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg min-w-[350px]"
-                >
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/5680/5680244.png"
-                    alt="search"
-                    width="15px"
-                    height="15px"
-                    class="mr-2"
-                  />
-                  <input
-                    type="search"
-                    placeholder="Search..."
-                    class="w-full bg-transparent outline-none focus:outline-none focus:ring-0 focus:border-none text-[#868C98] placeholder:text-[#868C98] font-normal text-sm placeholder:text-sm placeholder:font-normal"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative w-full overflow-x-auto border border-[#0000000D] sm:rounded-lg"
-            >
-              <table class="w-full text-left rtl:text-right">
-                <thead class="drop-shadow-sm bg-[#F6F8FA]">
-                  <tr>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                    >
-                      Name
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                    >
-                      Hotel
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                    >
-                      Date & Duration
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                    >
-                      Status
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                    >
-                      Status
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-base font-medium text-[#0A0D14]"
-                    >
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr
-                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  >
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                        alt="Jese image"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Jhon Doe</div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">Karachi Pakistan</td>
-                    <td class="px-6 py-4">May 12 2025, 7 Days</td>
-                    <td class="px-6 py-4">Normal</td>
-                    <td class="px-6 py-4">
-                      <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                    </td>
-                    <td class="px-6 py-4">
-                      <a
-                        href="#"
-                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >...</a
-                      >
-                    </td>
-                  </tr>
-                                    <tr
-                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  >
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                        alt="Jese image"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Jhon Doe</div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">Karachi Pakistan</td>
-                    <td class="px-6 py-4">May 12 2025, 7 Days</td>
-                    <td class="px-6 py-4">Normal</td>
-                    <td class="px-6 py-4">
-                      <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                    </td>
-                    <td class="px-6 py-4">
-                      <a
-                        href="#"
-                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >...</a
-                      >
-                    </td>
-                  </tr>
-                                    <tr
-                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  >
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                        alt="Jese image"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Jhon Doe</div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">Karachi Pakistan</td>
-                    <td class="px-6 py-4">May 12 2025, 7 Days</td>
-                    <td class="px-6 py-4">Normal</td>
-                    <td class="px-6 py-4">
-                      <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                    </td>
-                    <td class="px-6 py-4">
-                      <a
-                        href="#"
-                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >...</a
-                      >
-                    </td>
-                  </tr>
-                                    <tr
-                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  >
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                        alt="Jese image"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Jhon Doe</div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">Karachi Pakistan</td>
-                    <td class="px-6 py-4">May 12 2025, 7 Days</td>
-                    <td class="px-6 py-4">Normal</td>
-                    <td class="px-6 py-4">
-                      <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                    </td>
-                    <td class="px-6 py-4">
-                      <a
-                        href="#"
-                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >...</a
-                      >
-                    </td>
-                  </tr>
-                                    <tr
-                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  >
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                        alt="Jese image"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Jhon Doe</div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">Karachi Pakistan</td>
-                    <td class="px-6 py-4">May 12 2025, 7 Days</td>
-                    <td class="px-6 py-4">Normal</td>
-                    <td class="px-6 py-4">
-                      <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                    </td>
-                    <td class="px-6 py-4">
-                      <a
-                        href="#"
-                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >...</a
-                      >
-                    </td>
-                  </tr>
-                                    <tr
-                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
-                  >
-                    <th
-                      scope="row"
-                      class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                    >
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
-                        alt="Jese image"
-                      />
-                      <div class="ps-3">
-                        <div class="text-base font-semibold">Jhon Doe</div>
-                      </div>
-                    </th>
-                    <td class="px-6 py-4">Karachi Pakistan</td>
-                    <td class="px-6 py-4">May 12 2025, 7 Days</td>
-                    <td class="px-6 py-4">Normal</td>
-                    <td class="px-6 py-4">
-                      <span class="text-[#6273D8] px-3 py-1 rounded-2xl bg-[#EFEEFA] font-medium"> Confirm </span>
-                    </td>
-                    <td class="px-6 py-4">
-                      <a
-                        href="#"
-                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >...</a
-                      >
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+           // Get both menu triggers
+           const desktopMenuLogo = document.getElementById('desktopMenuLogo');
+           const mobileMenuTrigger = document.getElementById('mobileMenuTrigger');
+           const drawer = document.getElementById('drawer');
+           const closeDrawer = document.getElementById('closeDrawer');
+           const drawerOverlay = document.getElementById('drawerOverlay');
+         
+           // Function to open drawer
+           function openDrawer() {
+             console.log("Menu clicked");
+             drawer.classList.remove('translate-x-full');
+             drawerOverlay.classList.remove('hidden');
+             document.body.style.overflow = 'hidden';
+           }
+         
+           // Function to close drawer
+           function closeDrawerFunc() {
+             drawer.classList.add('translate-x-full');
+             drawerOverlay.classList.add('hidden');
+             document.body.style.overflow = 'auto';
+           }
+         
+           // Add event listeners for both menus
+           if (desktopMenuLogo) {
+             desktopMenuLogo.addEventListener('click', openDrawer);
+           }
+         
+           if (mobileMenuTrigger) {
+             mobileMenuTrigger.addEventListener('click', openDrawer);
+           }
+         
+           // Close drawer when close button is clicked
+           if (closeDrawer) {
+             closeDrawer.addEventListener('click', closeDrawerFunc);
+           }
+         
+           // Close drawer when clicking on overlay
+           if (drawerOverlay) {
+             drawerOverlay.addEventListener('click', closeDrawerFunc);
+           }
+         });
+      </script>
+   </body>
 </html>
