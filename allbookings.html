@@ -54,9 +54,9 @@
                      <h1 class="font-semibold text-[#0A0D14] text-xl mb-3 lg:mb-0">
                         Bookings
                      </h1>
-                     <div>
+                     <div class="w-full lg:w-fit">
                         <div
-                           class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg "
+                           class="border border-[#E2E4E9] bg-[#F6F8FA] py-2 px-[14px] flex items-center justify-start rounded-lg"
                            >
                            <img
                               src="https://cdn-icons-png.flaticon.com/512/5680/5680244.png"
@@ -73,9 +73,7 @@
                         </div>
                      </div>
                   </div>
-                  <div
-                     class="relative w-full overflow-auto border border-[#0000000D] sm:rounded-lg"
-                     >
+                  <div class="hidden lg:block relative w-full overflow-auto border border-[#0000000D] sm:rounded-lg">
                      <table class="w-full text-left rtl:text-right">
                         <thead class="bg-[#F6F8FA]">
                            <tr>
@@ -305,6 +303,398 @@
                         </tr>
                       </tfoot>
                      </table>
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
+                  </div>
+                  <div class="flex flex-col lg:hidden w-full h-full border border-[#E2E4E9] rounded-lg py-4">
+                     <div>
+                     <div class="flex items-center justify-between border-b border-b-[#E4E7EC] pb-2">
+                        <div scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                           <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                              alt="Jese image" />
+                           <div class="ps-5">
+                              <div class="text-sm font-medium text-[#0A0D14]">Jhon Doe</div>
+                           </div>
+                        </div>
+                        <div>
+                           <span class="p-5 font-bold"> . . . </span>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-2 items-center justify-between p-4 gap-y-5">
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Hotel
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">Azure Heights Hotel</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Booking Date
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 2025</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Check In - Out
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">May 12 - May 18</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Subtotal
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$100.00</div>
+                        </div>
+                        <div class="space-y-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Commision
+                           </div>
+                           <div class="font-normal text-xs text-[#525866]">$10.00</div>
+                        </div>
+                        <div class="flex flex-col items-end justify-end gap-1">
+                           <div class="text-xs font-medium text-[#0A0D14]">
+                              Status
+                           </div>
+                           <div class="text-[#6273D8] px-3 py-1 my-2 rounded-2xl bg-[#EFEEFA] font-medium text-xs">Confirm</div>
+                        </div>
+
+                     </div>                        
+                     </div>
+
                   </div>
                </div>
             </div>
