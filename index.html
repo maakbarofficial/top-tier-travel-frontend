@@ -13,7 +13,7 @@
    <style type="text/tailwindcss">
       html,
          body {
-         @apply h-full w-full m-1 p-0 overflow-hidden bg-[#EAEDF7];
+         @apply h-full w-full overflow-hidden bg-[#EAEDF7];
          font-family: "Inter", sans-serif;
          }
       </style>
@@ -22,7 +22,7 @@
 
 <body>
    <!-- Main Boday -->
-   <div class="flex flex-col lg:flex-row flex-1 gap-14 w-full h-full overflow-auto">
+   <div class="flex flex-col lg:flex-row h-full overflow-auto">
       <!-- Menu -->
       <div id="sidepanel-container"></div>
 
@@ -36,7 +36,7 @@
       <!-- Main Content -->
       <!-- For Debug -->
       <!-- bg-white w-full h-[90vh] rounded-lg -->
-      <div class="flex flex-col w-full rounded-lg my-7 mx-5">
+      <div class="flex flex-col w-full rounded-lg p-5 md:p-10">
          <!-- Header -->
          <div id="header-container"></div>
 
@@ -44,13 +44,13 @@
          <div class="hidden lg:block py-6">
             <h1 class="font-semibold text-2xl">Welcome To Dashboard</h1>
          </div>
-         <div class="flex flex-col lg:flex-row items-center justify-between gap-3 mb-5">
+         <div class="grid grid-cols-12 mb-5 h-full w-full gap-4">
             <!-- Stats -->
-            <div class="flex flex-col gap-3 items-center justify-between h-full">
-               <div class="flex flex-col items-center justify-center gap-3">
+            <div class="col-span-12 xl:col-span-3 flex flex-col gap-3 items-start justify-between h-full w-full">
+               <div class="flex flex-col items-center justify-center gap-3 w-full">
                   <div
-                     class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl flex items-center justify-center">
-                     <div class="space-y-2 min-w-[300px]">
+                     class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 w-full rounded-xl flex items-start justify-between">
+                     <div class="space-y-2">
                         <h3 class="font-medium text-sm text-[#0A0D14]">
                            Total Sales Revenue
                         </h3>
@@ -63,17 +63,19 @@
                      </div>
                      <div>
                         <div class="p-3 bg-[#675CE60F] rounded-full mt-10">
-                           <img
-                              src="https://icones.pro/wp-content/uploads/2021/03/icone-de-l-argent-symbole-png-violet.png"
-                              alt="menu" width="30px" height="30px" class="text-gray-300" />
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M10 4.16667C11.25 2.91667 12.2833 2.5 13.75 2.5C14.9656 2.5 16.1314 2.98289 16.9909 3.84243C17.8504 4.70197 18.3333 5.86776 18.3333 7.08333C18.3333 8.99167 17.075 10.45 15.8333 11.6667L10 17.5L4.16667 11.6667C2.91667 10.4583 1.66667 9 1.66667 7.08333C1.66667 5.86776 2.14955 4.70197 3.00909 3.84243C3.86864 2.98289 5.03442 2.5 6.25 2.5C7.71667 2.5 8.75 2.91667 10 4.16667ZM10 4.16667L7.53333 6.63333C7.36402 6.80142 7.22964 7.00135 7.13793 7.22161C7.04623 7.44186 6.99902 7.67808 6.99902 7.91667C6.99902 8.15525 7.04623 8.39147 7.13793 8.61173C7.22964 8.83198 7.36402 9.03191 7.53333 9.2C8.21667 9.88333 9.30833 9.90833 10.0333 9.25833L11.7583 7.675C12.1907 7.28266 12.7537 7.06533 13.3375 7.06533C13.9213 7.06533 14.4843 7.28266 14.9167 7.675L17.3833 9.89167M15 12.5L13.3333 10.8333M12.5 15L10.8333 13.3333"
+                                 stroke="#525866" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="flex flex-col items-center justify-center gap-3">
+               <div class="flex flex-col items-center justify-center gap-3 w-full">
                   <div
-                     class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl flex items-center justify-center">
-                     <div class="space-y-2 min-w-[300px]">
+                     class="border border-[#E5E7EB] bg-[#FFFFFF] w-full py-4 px-5 rounded-xl flex items-start justify-between">
+                     <div class="space-y-2">
                         <h3 class="font-medium text-sm text-[#0A0D14]">
                            Total Sales Revenue
                         </h3>
@@ -86,17 +88,19 @@
                      </div>
                      <div>
                         <div class="p-3 bg-[#675CE60F] rounded-full mt-10">
-                           <img
-                              src="https://icones.pro/wp-content/uploads/2021/03/icone-de-l-argent-symbole-png-violet.png"
-                              alt="menu" width="30px" height="30px" class="text-gray-300" />
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M10 4.16667C11.25 2.91667 12.2833 2.5 13.75 2.5C14.9656 2.5 16.1314 2.98289 16.9909 3.84243C17.8504 4.70197 18.3333 5.86776 18.3333 7.08333C18.3333 8.99167 17.075 10.45 15.8333 11.6667L10 17.5L4.16667 11.6667C2.91667 10.4583 1.66667 9 1.66667 7.08333C1.66667 5.86776 2.14955 4.70197 3.00909 3.84243C3.86864 2.98289 5.03442 2.5 6.25 2.5C7.71667 2.5 8.75 2.91667 10 4.16667ZM10 4.16667L7.53333 6.63333C7.36402 6.80142 7.22964 7.00135 7.13793 7.22161C7.04623 7.44186 6.99902 7.67808 6.99902 7.91667C6.99902 8.15525 7.04623 8.39147 7.13793 8.61173C7.22964 8.83198 7.36402 9.03191 7.53333 9.2C8.21667 9.88333 9.30833 9.90833 10.0333 9.25833L11.7583 7.675C12.1907 7.28266 12.7537 7.06533 13.3375 7.06533C13.9213 7.06533 14.4843 7.28266 14.9167 7.675L17.3833 9.89167M15 12.5L13.3333 10.8333M12.5 15L10.8333 13.3333"
+                                 stroke="#525866" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="flex flex-col items-center justify-center gap-3">
+               <div class="flex flex-col items-center justify-center gap-3 w-full">
                   <div
-                     class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl flex items-center justify-center">
-                     <div class="space-y-2 min-w-[300px]">
+                     class="border border-[#E5E7EB] bg-[#FFFFFF] w-full py-4 px-5 rounded-xl flex items-start justify-between">
+                     <div class="space-y-2">
                         <h3 class="font-medium text-sm text-[#0A0D14]">
                            Total Sales Revenue
                         </h3>
@@ -109,24 +113,25 @@
                      </div>
                      <div>
                         <div class="p-3 bg-[#675CE60F] rounded-full mt-10">
-                           <img
-                              src="https://icones.pro/wp-content/uploads/2021/03/icone-de-l-argent-symbole-png-violet.png"
-                              alt="menu" width="30px" height="30px" class="text-gray-300" />
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M10 4.16667C11.25 2.91667 12.2833 2.5 13.75 2.5C14.9656 2.5 16.1314 2.98289 16.9909 3.84243C17.8504 4.70197 18.3333 5.86776 18.3333 7.08333C18.3333 8.99167 17.075 10.45 15.8333 11.6667L10 17.5L4.16667 11.6667C2.91667 10.4583 1.66667 9 1.66667 7.08333C1.66667 5.86776 2.14955 4.70197 3.00909 3.84243C3.86864 2.98289 5.03442 2.5 6.25 2.5C7.71667 2.5 8.75 2.91667 10 4.16667ZM10 4.16667L7.53333 6.63333C7.36402 6.80142 7.22964 7.00135 7.13793 7.22161C7.04623 7.44186 6.99902 7.67808 6.99902 7.91667C6.99902 8.15525 7.04623 8.39147 7.13793 8.61173C7.22964 8.83198 7.36402 9.03191 7.53333 9.2C8.21667 9.88333 9.30833 9.90833 10.0333 9.25833L11.7583 7.675C12.1907 7.28266 12.7537 7.06533 13.3375 7.06533C13.9213 7.06533 14.4843 7.28266 14.9167 7.675L17.3833 9.89167M15 12.5L13.3333 10.8333M12.5 15L10.8333 13.3333"
+                                 stroke="#525866" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
             <!-- Comission Tracking -->
-            <div
-               class="border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl w-full h-full flex flex-col items-start justify-start">
+            <div class="col-span-12 xl:col-span-9 border border-[#E5E7EB] bg-[#FFFFFF] py-4 px-5 rounded-xl w-full h-full flex flex-col items-start justify-start">
                <div class="border-b-2 border-b-[#F2F2F2] w-full pb-3">
                   <h1 class="font-semibold text-[#0A0D14] text-xl">
                      Commision Tracking
                   </h1>
                </div>
-               <div class="flex flex-col lg:flex-row items-center justify-between w-full py-3 mb-5">
-                  <div class="flex gap-5">
+               <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full py-3 mb-5">
+                  <div class="flex flex-wrap gap-5">
                      <div class="flex gap-1">
                         <p class="font-semibold text-xl text-[#0A0D14] mr-2">0%</p>
                         <p class="font-medium text text-[#868C98]">This Week</p>
@@ -148,30 +153,28 @@
                      <div class="w-48">
                         <canvas id="myChart"></canvas>
                       </div>
-                     <div class="flex items-center justify-center gap-5">
-                        <div class="flex items-center gap-3 w-full mb-3 lg:mb-0">
-                            <div class="w-3 h-3 rounded-full bg-[#59B6FC]"></div>
-                           <div class="flex items-center justify-between gap-10 lg:w-[200px]">
-                              <p class="font-normal text-sm text-[#101010B2]">Paid</p>
-                              <p class="font-semibold text-lg text-[#101010]">70%</p>
+                     <div class="flex flex-row sm:flex-col lg:flex-col  items-center justify-between gap-5 w-full">
+                        <div class="grid grid-cols-12 gap-0 lg:gap-5 w-full">
+                           <div class="col-span-8 flex items-center justify-start gap-2 font-normal text-sm text-[#101010B2]">
+                                 <div class="w-3 h-3 rounded-full bg-[#59B6FC]"></div>
+                              Paid
                            </div>
+                           <div class="col-span-4 font-semibold text-lg text-[#101010]">70%</div>
                         </div>
-                        <div class="flex items-center gap-3 w-full">
-                           <div class="w-3 h-3 rounded-full bg-[#FECB67]"></div>
-                           <div class="flex items-center justify-between gap-10 lg:w-[200px]">
-                              <p class="font-normal text-sm text-[#101010B2]">
-                                 Pending
-                              </p>
-                              <p class="font-semibold text-lg text-[#101010]">30%</p>
+                        <div class="grid grid-cols-12 gap-3 w-full">
+                           <div class="col-span-8 flex items-center justify-start gap-2 font-normal text-sm text-[#101010B2]">
+                              <div class="w-3 h-3 rounded-full bg-[#FECB67]"></div>
+                              Pending
                            </div>
+                           <div class="col-span-4 font-semibold text-lg text-[#101010]">30%</div>
                         </div>
                      </div>
                   </div>
-                  <div class="flex flex-col text-left w-full items-start lg:items-center py-5 px-10 gap-1">
-                     <p class="font-medium text-[22px] text-[#868C98]">
+                  <div class="flex flex-col text-left w-full items-start lg:items-end mt-5 md:mt-0 md:py-5 md:px-10 gap-1">
+                     <p class="font-medium text-[14px] md:text-[22px] text-[#868C98]">
                         Total Earned
                      </p>
-                     <p class="font-semibold text-5xl text-[#0A0D14] py-2">
+                     <p class="font-semibold text-3xl md:text-5xl text-[#0A0D14] md:py-2">
                         $100.00
                      </p>
                   </div>
@@ -333,7 +336,7 @@
             </div>
          </div>
          <!-- Share Cards -->
-         <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-5">
+         <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-5 my-5">
             <div
                class="w-full h-full mb-5 flex flex-col lg:flex-row items-center justify-start gap-5 border border-[#E5E7EB] bg-[#FFFFFF] px-[22px] py-[18px] rounded-xl">
                <div>
