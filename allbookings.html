@@ -11,9 +11,9 @@
          />
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
       <style type="text/tailwindcss">
-         html,
+      html,
          body {
-         @apply h-full w-full m-1 p-0 overflow-hidden bg-[#EAEDF7];
+         @apply h-full w-full overflow-hidden bg-[#EAEDF7];
          font-family: "Inter", sans-serif;
          }
       </style>
@@ -21,7 +21,7 @@
    </head>
    <body>
       <!-- Main Boday -->
-      <div class="flex flex-col lg:flex-row flex-1 gap-14 w-full h-full overflow-auto">
+      <div class="flex flex-col lg:flex-row h-full overflow-auto">
       <!-- Menu -->
       <div id="sidepanel-container"></div>
 
@@ -35,7 +35,7 @@
          <!-- Main Content -->
          <!-- For Debug -->
          <!-- bg-white w-full h-[90vh] rounded-lg -->
-         <div class="flex flex-col w-full h-full rounded-lg my-7 mx-5">
+         <div class="flex flex-col w-full rounded-lg p-5 md:p-10">
             <!-- Header -->
             <div id="header-container"></div>
             
